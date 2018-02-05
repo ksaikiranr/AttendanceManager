@@ -1,0 +1,45 @@
+page-markattendence {
+
+  ion-avatar h3{
+    font-size: 1.9em !important;
+  }
+  ion-label{
+    color: #3481B3;
+    font-size: 1.5em;
+  }
+  h2{
+    font-size: 1.5em !important;
+    color: #3481B3;
+    font-weight: normal;
+  }
+  h6{
+    color: #3481B3;
+  }
+  .datetime-text{
+    font-weight: bolder !important;
+    margin: 14% 2% !important;
+    padding-bottom: 3%;
+    font-size: 2em;
+    color: #fff;
+  }
+  h4, .datetime-text{
+    background-color: #0277BD;
+    background-color: #DB2C4D;
+
+    width: 100%;
+    color: #eee !important;
+    padding: 3%;
+    font-weight: normal;
+    margin-top: 0;
+  }
+  .heading{
+    background-color: #DB2C4D;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1em;
+    font-size: bold;
+  }
+  ion-datetime{
+    padding: 0 !important;
+  }
+}

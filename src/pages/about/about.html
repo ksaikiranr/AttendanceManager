@@ -1,0 +1,210 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content text-wrap>
+
+  <h3>Developer</h3>
+  <ion-list>
+
+  <ion-item>
+    <ion-avatar item-left>
+      <img src="assets/images/me.jpg">
+    </ion-avatar>
+    <h2><span style="font-size:1.5em">K Sai Kiran</span></h2>
+    <p text-wrap style="font-size:1.5rem;">
+      FOSS Enthusiastic, Competitive Programmer, ACM & CSI Chapter Member, CSE Undergrad
+    </p>
+  </ion-item>
+
+  <ion-card-content>
+
+    <p>
+      Hey there! <br/>Its good to see that you care about the developer. Well am K Sai Kiran, Computer Science undergraduate.
+        Do write your feedback or request new feature at ksaikiranr@gmail.com
+      </p>
+      <p> Want to know more about my works? Then follow me </p>
+      <ion-row padding style="text-align:center;">
+        <ion-col col-4>
+          <a href="https://linkedin.com/in/ksaikiranr" target="_blank"><ion-icon color="darkSky" name="logo-linkedin"></ion-icon></a>
+        </ion-col>
+        <ion-col col-4>
+          <a href="https://github.com/ksaikiranr" target="_blank"> <ion-icon name="logo-github" color="dark"></ion-icon></a>
+        </ion-col>
+        <ion-col col-4>
+        <a href="https://facebook.com/ksaikiranrp" color="dark" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon></a>
+        </ion-col>
+      </ion-row>
+  </ion-card-content>
+</ion-list>
+
+<h3>Key features</h3>
+<ion-card padding>
+  <ion-item>
+    <ion-icon name="document" item-start></ion-icon>
+    <h2>Angular 2 form validation</h2>
+  </ion-item>
+</ion-card>
+
+<ion-card padding>
+  <ion-item>
+    <ion-icon name="archive" item-start></ion-icon>
+    <h2>Cordova sqlite storage</h2>
+  </ion-item>
+</ion-card>
+
+<ion-card padding>
+  <ion-item>
+    <ion-icon name="md-refresh" item-start></ion-icon>
+    <h2>Pull to refresh</h2>
+  </ion-item>
+</ion-card>
+
+<ion-card padding>
+  <ion-item>
+    <ion-icon name="contact" item-start></ion-icon>
+    <h2>Faculty authentication</h2>
+  </ion-item>
+</ion-card>
+
+<ion-card padding>
+  <ion-item>
+    <ion-icon name="md-search" item-start></ion-icon>
+    <h2>Student search functionality</h2>
+  </ion-item>
+</ion-card>
+
+  <h3>Documentation</h3>
+
+
+  <h5 padding-left padding-right>
+    This app basically helps faculties to manage their attendence list in an efficient way.
+  </h5>
+  <ul>
+      <li> The app first routes the user to a login page, where the user needs to input their email-id and password.
+        <span class="light">(for testing use password as login123). </span></li>
+      <li> After successful login the app routes to tabs page, which contains 4 tab sections: </li>
+        <ol>
+          <li>List tab</li>
+          <li>Add tab</li>
+          <li>Settings tab</li>
+          <li>About tab</li>
+        </ol>
+      <li>By default, the app routes the user to list<span class="light">(attendence-list)</span> page,
+         where the user can take attendence and/or scroll down to view attendence details.</li>
+      <li>When the user wishes to take attendence, user must choose the date for which the attendence is being taken,
+         by default the date is set to current date. On clicking <strong>TAKE ATTENDENCE</strong> button,
+          user is routed to <strong>Mark attendence page.</strong>
+      </li>
+      <li>Mark Attendence page contains the list of students with respective toggle buttons.
+          If the toggle is switched to green then, the student is marked present,
+          otherwise absent. On clicking submit, the user is redirected back to attendence-list page.<br/>
+           <strong>Note: The records remain uneffected till the submit button is tapped</strong>.
+      </li>
+      <li>To add new student into the data base switch to Add<span class="light">Add-Student</span> tab,
+        fill the form appropriately, and tap <strong>Add to records.</strong>
+      </li>
+      <li>
+        The settings tab helps the user to manage the database easily by having two user friendly buttons:
+          <ol>
+            <li>Clear records</li>
+            <li>Populate records</li>
+          </ol>
+      </li>
+      <li>Clear records button clears all the records stored in database.<br/> <strong> Note: this action can not be reversed, procced with caution. </strong>
+      </li>
+      <li>Populate records button generates 50+ dummy records in database.<br/> <strong> Used for testing purposes only! </strong>
+      </li>
+      <li>About tab contains all the app necessary details. If you need more documentation send a request to ksaikiranr@gmail.com </li>
+  </ul>
+
+  <h3> Build details </h3>
+  <div padding>
+    <ion-row>
+      <ion-col col-4>
+        <strong>Developer:</strong>
+      </ion-col>
+      <ion-col col-8>
+        K SAI KIRAN
+      </ion-col>
+    </ion-row>
+  <hr/>
+  <ion-row>
+    <ion-col col-4>
+      <strong>Usage:</strong>
+    </ion-col>
+    <ion-col col-8>
+      Roll call manager.
+    </ion-col>
+  </ion-row>
+  <hr/>
+  <ion-row>
+    <ion-col col-4>
+        <strong>App version:</strong>
+    </ion-col>
+    <ion-col col-8>
+         1.0.0
+    </ion-col>
+  </ion-row>
+<hr/>
+  <ion-row>
+    <ion-col col-4>
+      <strong>Operating system:</strong>
+    </ion-col>
+    <ion-col col-8>
+      Android 4.0 or above
+    </ion-col>
+  </ion-row>
+</div>
+  <h3>Powered by</h3>
+  <ion-row padding style="text-align:center;">
+    <ion-col col-4>
+      <ion-icon name="ionic" color="darkBlue"></ion-icon>
+    </ion-col>
+    <ion-col col-4>
+      <ion-icon name="logo-angular" color="danger"></ion-icon>
+    </ion-col>
+    <ion-col col-4>
+      <ion-icon name="logo-android" color="darkGreen"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <ion-row padding style="text-align:center;">
+    <ion-col col-4>
+      <ion-icon name="logo-html5" color="darkGreen"></ion-icon>
+    </ion-col>
+    <ion-col col-4>
+      <ion-icon name="logo-css3" color="darkBlue"></ion-icon>
+    </ion-col>
+    <ion-col col-4>
+      <ion-icon name="logo-sass" color="dark"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <ion-row padding style="text-align:center;">
+    <ion-col col-4>
+      <ion-icon name="logo-nodejs" color="dark"></ion-icon>
+    </ion-col>
+    <ion-col col-4>
+      <ion-icon name="logo-google" color="danger"></ion-icon>
+    </ion-col>
+    <ion-col col-4>
+      <ion-icon name="appstore" color="darkGreen"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+
+
+
+
+
+<div class="footer" text-wrap>
+  HANDCRAFTED WITH <ion-icon name="heart" style='color:#FF0000; font-size: 1.1em !important; padding: 0; margin: 0;'></ion-icon><br/> BY K SAI KIRAN <br/>
+  Copyright &copy; 2017 ALL RIGHTS RESERVED
+</div>
+
+</ion-content>

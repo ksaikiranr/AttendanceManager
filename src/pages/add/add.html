@@ -1,0 +1,61 @@
+<!--
+  Generated template for the AddPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Add Student</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content text-wrap>
+  <h3> Form to add student into DB </h3>
+  <form (submit)="onSubmit()" [formGroup]="addStudentForm">
+    <ion-card>
+      <ion-item>
+        <ion-label fixed>Student Name:(str) </ion-label>
+        <ion-input formControlName="sNameF" [(ngModel)]="sName" type="text" name="sname"></ion-input>
+      </ion-item>
+      <div class="alert" *ngIf="!addStudentForm.controls['sNameF'].valid && addStudentForm.controls['sNameF'].touched ">Student name is empty or invalid!</div>
+      <ion-item>
+        <ion-label fixed>Student USN:(str) </ion-label>
+        <ion-input formControlName="sUsnF" [(ngModel)]="sUsn" type="text" name="susn"></ion-input>
+      </ion-item>
+      <div class="alert" *ngIf="!addStudentForm.controls['sUsnF'].valid && addStudentForm.controls['sUsnF'].touched ">Student USN is empty or invalid!</div>
+
+      <ion-item>
+        <ion-label fixed>Subject:(str) </ion-label>
+        <ion-input formControlName="subNameF" [(ngModel)]="sSubject" type="text" name="ssub"></ion-input>
+      </ion-item>
+      <div class="alert" *ngIf="!addStudentForm.controls['subNameF'].valid && addStudentForm.controls['subNameF'].touched ">Subject name is empty or invalid!</div>
+
+      <ion-item>
+        <ion-label fixed>Student Roll:(int) </ion-label>
+        <ion-input formControlName="sRollF" [(ngModel)]="sRoll" type="text" name="sroll"></ion-input>
+      </ion-item>
+      <div class="alert" *ngIf="!addStudentForm.controls['sRollF'].valid && addStudentForm.controls['sRollF'].touched ">Student roll is empty or invalid!</div>
+
+      <ion-item>
+        <ion-label fixed>Classes attended:(int) </ion-label>
+        <ion-input formControlName="sAttendedF" [(ngModel)]="sAttended" type="text" name="sattended"></ion-input>
+      </ion-item>
+      <div class="alert" *ngIf="!addStudentForm.controls['sAttendedF'].valid && addStudentForm.controls['sAttendedF'].touched ">Student attended count is empty or invalid!</div>
+
+      <ion-item>
+        <ion-label fixed>Total classes:(int) </ion-label>
+        <ion-input formControlName="sTotalF" [(ngModel)]="sTotal" type="text" name="stotal"></ion-input>
+      </ion-item>
+      <div class="alert" *ngIf="!addStudentForm.controls['sTotalF'].valid && addStudentForm.controls['sTotalF'].touched ">Total classes count is empty or invalid!</div>
+
+    </ion-card>
+    <div text-center>
+      <button ion-button type="submit"  color="darkBlue" [disabled]="!addStudentForm.valid" >Add student to record</button>
+    </div>
+  </form>
+</ion-content>

@@ -1,0 +1,35 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content text-wrap padding>
+  <ion-list>
+    <ion-item-divider>Clear records</ion-item-divider>
+    <ion-item>
+      <p>
+        This button will clear all student records stored in Database<br/><span style="font: #f00; font-weight: bold;">(unrecoverable, procced with caution!)</span>
+      </p>
+    </ion-item>
+    <button ion-button round  block color="danger" (click)="showDeleteConfirm()">Clear records &nbsp;<ion-icon big name="trash"></ion-icon></button>
+
+    <ion-item-divider>Populate records</ion-item-divider>
+    <ion-item>
+      <p>
+        Load dummy records into Database<br/><span style="font: #f00; font-weight: bold;">(for testing purposes only!)</span>
+      </p>
+    </ion-item>
+    <button ion-button round  block color="darkGreen" (click)="populateDatabse()">Populate records &nbsp;<ion-icon big name="filing"></ion-icon></button>
+
+  </ion-list>
+</ion-content>

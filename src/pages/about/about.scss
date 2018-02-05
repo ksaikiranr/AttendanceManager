@@ -1,0 +1,45 @@
+page-about {
+
+  p{
+    font-size: 1.1em !important;
+  }
+  .footer{
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 3% 0%;
+  }
+  h3{
+    background-color: #00695C;
+    background-color: #0277BD;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 3%;
+    font-weight: 500;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+  .light{
+    color: #555;
+  }
+  ion-icon{
+    font-size: 5em;
+  }
+
+  img{
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  h5{
+    color: #283E4A;
+  }
+  li{
+    padding-right: 3% !important;
+    margin-bottom: 3%;
+    white-space:5px !important;
+    font-size: 1.1em;
+  }
+}

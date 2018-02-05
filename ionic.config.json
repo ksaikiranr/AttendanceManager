@@ -1,0 +1,8 @@
+{
+  "name": "AttendenceManager",
+  "app_id": "fca8a2db",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

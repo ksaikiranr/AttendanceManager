@@ -1,0 +1,64 @@
+<!--
+  Generated template for the MarkattendencePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Take Attendence</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content>
+    <div class="heading" card>
+      <h4 style="text-align:left;">Taking attendence for: </h4>
+      <ion-datetime displayFormat="DD MMM YYYY HH:MM" [(ngModel)]="date"></ion-datetime>
+    </div>
+    <ion-row card>
+      <ion-col col-4>
+        <h6 text-center>Roll no.</h6>
+      </ion-col>
+      <ion-col col-8>
+        <h6>Name</h6>
+      </ion-col>
+    </ion-row>
+    <hr/>
+    <ion-list>
+    <ion-item *ngFor="let item of listTemp" text-wrap>
+      <ion-label>
+        <ion-row>
+          <ion-col col-4>
+            <ion-avatar text-center>
+              <h3 style="font-size: 20px !important;">{{item.sRoll}}</h3>
+            </ion-avatar>
+          </ion-col>
+          <ion-col col-8>
+            <h2>{{item.sName}}</h2>
+            <p>{{item.sUsn}}</p>
+          </ion-col>
+        </ion-row>
+<!--
+          <ion-row>
+            <ion-col col-4>
+                <div class="circle">
+                  {{item.sRoll}}
+                </div>
+            </ion-col>
+            <ion-col col-8>
+              <h3><strong>{{item.sName}}</strong></h3>
+            </ion-col>
+          </ion-row>
+        <p>USN: {{item.sUsn}} <br/>Attended: {{item.sAttended}}, Total classes: {{item.sTotal}} </p>
+        <h3>Attendence %age: {{item.sAttended}}/{{item.sTotal}} </h3>-->
+      </ion-label>
+        <ion-toggle [(ngModel)]="item.toggler" checked="false" color="secondary"></ion-toggle>
+    </ion-item>
+  </ion-list>
+  <div text-center>
+  <button ion-button color="darkGreen" (click)="saveList()"> Record to Database &nbsp; <ion-icon name="cloud-upload"></ion-icon></button></div>
+</ion-content>

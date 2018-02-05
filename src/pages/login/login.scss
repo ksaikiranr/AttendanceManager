@@ -1,0 +1,27 @@
+page-login {
+  ion-content{
+    background-color: #304059 !important;
+    color: #fff !important;
+  }
+  ion-list{
+  }
+  ion-icon{
+    font-size: 8em;
+  }
+
+  ion-label{
+    font-size: 1em !important;
+    font-weight: normal;
+    margin-top: 0.5rem !important;
+  }
+  ion-list-header{
+    background-color: #DB2C4D !important;
+    width: 100%;
+    font-size: 1.3em !important;
+    color: #fff !important;
+    border: 0 !important;
+  }
+  .text-center{
+    text-align: center;
+  }
+}

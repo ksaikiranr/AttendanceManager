@@ -1,0 +1,29 @@
+page-add {
+  h3{
+    background-color: #DB2C4D;
+    width: 100%;
+    color: #fff;
+    padding: 3%;
+    font-weight: 400;
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+  ion-content{
+    background-color: #eee !important;
+  }
+  ion-label{
+    color: #555 !important;
+    font-weight:  bold !important;
+  }
+  .input{
+    border-bottom: 2px solid orange;
+  }
+  .alert{
+    padding: 1em;
+    background-color: #EE2C4D;
+    border-radius: 2%;
+    color: #fff;
+    white-space: 3px;
+    margin: 5px 1.5em;
+  }
+}

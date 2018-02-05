@@ -1,0 +1,103 @@
+<!--
+  Generated template for the StudentdetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark" text-wrap>
+    <ion-title>Details of {{this.student?.sName}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <ion-list card>
+    <ion-card-header text-wrap>
+      Student details
+    </ion-card-header>
+    <ion-item>
+      <ion-row>
+        <ion-col>
+          <b>Name</b>
+        </ion-col>
+        <ion-col style="text-align:right;">
+          {{this.student.sName}}
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col>
+          <b>USN</b>
+        </ion-col>
+        <ion-col style="text-align:right;">
+          {{this.student.sUsn}}
+        </ion-col>
+      </ion-row>
+    </ion-item><ion-item>
+      <ion-row>
+        <ion-col>
+          <b>Roll</b>
+        </ion-col>
+        <ion-col style="text-align:right;">
+          {{this.student.sRoll}}
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col>
+          <b>Subject</b>
+        </ion-col>
+        <ion-col style="text-align:right;">
+          {{this.student.sSubject}}
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col style="text-align: center;">
+          <b>Attended count</b><br/> {{this.student.sAttended}}
+        </ion-col>
+        <ion-col style="text-align:center;">
+          <b>Total count</b><br/> {{this.student.sTotal}}
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+         <b>Absent dates</b>
+      </ion-row>
+        <ion-card>
+          <h5 padding *ngFor="let date of this.student.absentDates">
+              {{date | date: 'medium' }}
+          </h5>
+        </ion-card>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+         <b>Attended dates</b>
+      </ion-row>
+        <ion-card>
+          <h5 padding *ngFor="let date of this.student.presentDates">
+              {{date | date: 'medium' }}
+          </h5>
+        </ion-card>
+    </ion-item>
+
+  </ion-list >
+  <ion-list card>
+     <ion-card-header text-wrap>
+       Statistics of {{this.student.sName}}
+     </ion-card-header>
+     <ion-card-content>
+       <canvas #doughnutCanvas></canvas>
+     </ion-card-content>
+   </ion-list>
+
+</ion-content>

@@ -1,0 +1,28 @@
+page-studentdetails {
+  .scroll-content {
+            background-color: map-get($colors, light);
+        }
+
+        ion-card-header{
+            font-weight: bold;
+            font-size: 1.2em !important;
+          background-color: #0277BD;
+          background-color: #DB2C4D;
+
+          width: 100%;
+          color: #fff !important;
+          padding: 3%;
+          font-weight: normal;
+          margin-top: 0;
+          margin-bottom: 8px !important;
+        }
+        ion-list{
+          border: 2px solid #DB2C4D !important;
+        }
+        ion-card{
+          border: 1px solid #64B5F6 !important;
+        }
+        b{
+          color: #333;
+        }
+}
