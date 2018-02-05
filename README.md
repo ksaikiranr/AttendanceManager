@@ -1,2 +1,2 @@
 # AttendanceManager
-Ionic 2 app for aattendance management
+Ionic 2 app for attendance management
